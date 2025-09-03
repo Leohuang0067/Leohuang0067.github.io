@@ -1,15 +1,96 @@
 <!DOCTYPE html>
+<html lang="zh-CN">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Project 0 by Lue Huang</title>
+  <style>
+    /* 全局字体和背景 */
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+    }
+
+    /* 标题样式 */
+    h1 {
+      color: #2c3e50;
+      border-bottom: 3px solid #2980b9;
+      padding-bottom: 8px;
+      margin-top: 40px;
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+
+    /* 图片容器，方便布局 */
+    .image-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    /* 图片样式 */
+    .image-group img {
+      max-width: 48%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    /* 图片悬浮效果 */
+    .image-group img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    /* 单张图片全宽 */
+    .single-image {
+      max-width: 100%;
+      display: block;
+      margin: 20px auto 0 auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .single-image:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    /* 响应式调整 */
+    @media (max-width: 600px) {
+      .image-group img {
+        max-width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
+
   <h1>Part 1: Selfie: The Wrong Way vs. The Right Way</h1>
-  <img src="media/13.jpg" alt="1" />
-  <img src="media/14.jpg" alt="2" />
+  <div class="image-group">
+    <img src="media/13.jpg" alt="Selfie Wrong Way" />
+    <img src="media/14.jpg" alt="Selfie Right Way" />
+  </div>
+
   <h1>Part 2: Architectural Perspective Compression</h1>
-  <img src="media/15.jpg" alt="3" />
-  <img src="media/16.jpg" alt="4" />
+  <div class="image-group">
+    <img src="media/15.jpg" alt="Perspective Compression 1" />
+    <img src="media/16.jpg" alt="Perspective Compression 2" />
+  </div>
+
   <h1>Part 3: The Dolly Zoom</h1>
-  <img src="media/17.gif" alt="5" />
+  <img class="single-image" src="media/17.gif" alt="The Dolly Zoom" />
+
 </body>
 </html>
