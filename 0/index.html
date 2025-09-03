@@ -1,11 +1,8 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Project 0 by Lue Huang</title>
   <style>
-    /* 全局字体和背景 */
     body {
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       background: #f9f9f9;
@@ -18,7 +15,6 @@
       line-height: 1.6;
     }
 
-    /* 标题样式 */
     h1 {
       color: #2c3e50;
       border-bottom: 3px solid #2980b9;
@@ -28,7 +24,6 @@
       font-size: 1.8rem;
     }
 
-    /* 图片容器，方便布局 */
     .image-group {
       display: flex;
       flex-wrap: wrap;
@@ -36,7 +31,6 @@
       margin-top: 20px;
     }
 
-    /* 图片样式 */
     .image-group img {
       max-width: 48%;
       border-radius: 8px;
@@ -45,13 +39,11 @@
       cursor: pointer;
     }
 
-    /* 图片悬浮效果 */
     .image-group img:hover {
       transform: scale(1.05);
       box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     }
 
-    /* 单张图片全宽 */
     .single-image {
       max-width: 100%;
       display: block;
@@ -67,7 +59,6 @@
       box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     }
 
-    /* 响应式调整 */
     @media (max-width: 600px) {
       .image-group img {
         max-width: 100%;
@@ -78,12 +69,14 @@
 <body>
 
   <h1>Part 1: Selfie: The Wrong Way vs. The Right Way</h1>
+  <p class="description">The pictures on the left and right sides of the page respectively illustrate the incorrect and correct ways of taking photos. The image on the left appears more distorted because the camera on the left is closer to the face, making the facial features very distinct within the scale of the camera distance. </p>
   <div class="image-group">
     <img src="media/13.jpg" alt="Selfie Wrong Way" />
     <img src="media/14.jpg" alt="Selfie Right Way" />
   </div>
 
   <h1>Part 2: Architectural Perspective Compression</h1>
+  <p class="description">Similarly, the depth of field effect in the right photo is more pronounced because it was taken closer to the subject, resulting in the changes in the subject's features being clearly visible within the scale of the shooting distance. </p>
   <div class="image-group">
     <img src="media/15.jpg" alt="Perspective Compression 1" />
     <img src="media/16.jpg" alt="Perspective Compression 2" />
